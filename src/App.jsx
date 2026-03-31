@@ -1,12 +1,12 @@
 import './App.css'
+import Header from './components/Header/index.'
 
 function App() {
 
   return (
     <>
-      <header>
-        <h1>Exemplo de React</h1>
-      </header>
+      <Header />
+      
 
 
       <section>
@@ -38,3 +38,4 @@ function App() {
 
 export default App
 
+s
