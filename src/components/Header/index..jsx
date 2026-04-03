@@ -1,4 +1,4 @@
-import './syle.css'
+import './index.css'
 
 function Header() {
     return (

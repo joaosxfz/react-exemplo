@@ -1,4 +1,4 @@
-import './syle.css'
+import './index.css'
 
 function Footer() {
 
@@ -11,4 +11,4 @@ function Footer() {
     )
 }
 
-export default footer
+export default Footer

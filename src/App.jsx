@@ -1,6 +1,6 @@
 import './App.css'
 import Footer from './components/Footer'
-import Header from './components/Header/index.'
+import Header from './components/Header'
 import List from './components/List'
 
 function App() {
@@ -8,7 +8,11 @@ function App() {
   return (
     <>
       <Header />
-      <List  title={"batata"}/>
+      <List 
+       title
+       subtitleSecondList="Minha Lista de Compras"
+       />
+       <List title="Agua"/>
       <Footer />
 
       
@@ -17,5 +21,3 @@ function App() {
 }
 
 export default App
-
-s
