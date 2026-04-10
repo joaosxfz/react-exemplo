@@ -1,8 +1,14 @@
+import { Link } from 'react-router-dom'
 import './style.css'
 
 function About() {
     return (
-        <> OUTRA PAGINA GULOSA </>
+        <>
+        <p>OUTRA PÁGINA GULOSA</p>
+        <Link to="/">
+        <button> navega ai pai</button>
+        </Link>
+        </>
     )
 }
 
