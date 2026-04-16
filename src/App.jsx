@@ -1,15 +1,12 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import Footer from './components/Footer'
+// import Header from './components/Header'
+import List from './components/List'
 import './index.css'
-
-// Componentes
-import Footer from './components/Footer/index'
-import Header from './components/Header/index'
-import List from './components/List/index'
-
-// Páginas
-import Home from './pages/Home/index'
-import About from './pages/About/index'
+import About from './pages/About'
+import Header from './components/Header/'
+import Home from './pages/Home'
 
 function App() {
   return (
