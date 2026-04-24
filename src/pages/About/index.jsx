@@ -4,10 +4,12 @@ import './style.css'
 function About() {
     return (
         <>
-        <p>OUTRA PÁGINA GULOSA</p>
-        <Link to="/">
-        <button> navega ai pai</button>
-        </Link>
+            <section>
+                <p>OUTRA PÁGINA GULOSA</p>
+                <Link to="/">
+                    <button>Home</button>
+                </Link>
+            </section>
         </>
     )
 }

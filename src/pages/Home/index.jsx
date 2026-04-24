@@ -4,10 +4,16 @@ import './style.css'
 function Home() {
     return (
         <>
-        <h2>Bem vindo ao puteiro</h2>
-        <Link to="/about" >
-        <button> navega ai pai</button>
-        </Link>
+            <h2>Bem vindo ao puteiro</h2>
+            <section>
+                <p>Navegação:</p>
+                <Link to="/about" >
+                    <button>About</button>
+                </Link>
+                <Link to="/signup">
+                    <button>SignUp</button>
+                </Link>
+            </section>
         </>
     )
 }
