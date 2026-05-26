@@ -4,12 +4,7 @@ import './style.css'
 function About() {
     return (
         <>
-            <section>
-                <p>OUTRA PÁGINA GULOSA</p>
-                <Link to="/">
-                    <button>Home</button>
-                </Link>
-            </section>
+          <h2>Sobre</h2>
         </>
     )
 }

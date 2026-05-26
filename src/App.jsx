@@ -12,6 +12,7 @@ function App() {
   return (
     <>
       <Header />
+      <List />
       <Routes>
         <Route path='/signup' element={<SignUp />} />
         <Route path="/" element={<Home />} />

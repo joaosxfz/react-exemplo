@@ -15,9 +15,6 @@ function SignUp() {
 
     return (
         <>
-            <Link to="/">
-                <button> navega ai pai</button>
-            </Link>
             <h2>Criar Conta</h2>
             <section>
 
