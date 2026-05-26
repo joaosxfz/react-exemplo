@@ -36,17 +36,19 @@ function Home() {
                 <h2 className='titulo-lista'>Personagens - Rick and Morty</h2>
 
                 <div className='lista-personagens'>
+                    {personagens.map((personagem) => (
                     <div className='char-card'>
-                        <img src={personagens[0].image} alt="" />
-                        <h2></h2>
+                        <img src={personagem.image} alt="" />
+                        <h2>{personagem.name}</h2>
 
                         <div className='char-info'>
-                            <span>Espécie: </span>
-                            <span>Gênero: </span>
-                            <span>Status: </span>
+                            <span>Espécie: {personagem.species}</span>
+                            <span>Gênero: {personagem.gender}</span>
+                            <span>Status: {personagem.status}</span>
                         </div>
 
                     </div>
+                    ))}
                 </div>
             </div>
         </>
