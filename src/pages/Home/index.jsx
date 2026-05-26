@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import './style.css'
 import { useEffect, useState } from 'react'
 import { getCharacters } from '../../api/rickAndMorty';
+import Card from '../../components/Card';
 
 function Home() {
     //LOADING - existe quando requisita  algo para algo externo
@@ -9,8 +10,8 @@ function Home() {
     const [personagens, setPersonagens] = useState([]);
 
     useEffect(() => {
-        function carregar() {
-            const dados = getCharacters()
+        async function carregar() {
+            const dados = await getCharacters()
             setPersonagens(dados)
             setCarregando(false)
         }
@@ -37,17 +38,7 @@ function Home() {
 
                 <div className='lista-personagens'>
                     {personagens.map((personagem) => (
-                    <div className='char-card'>
-                        <img src={personagem.image} alt="" />
-                        <h2>{personagem.name}</h2>
-
-                        <div className='char-info'>
-                            <span>Espécie: {personagem.species}</span>
-                            <span>Gênero: {personagem.gender}</span>
-                            <span>Status: {personagem.status}</span>
-                        </div>
-
-                    </div>
+                    <Card personagem={personagem} />
                     ))}
                 </div>
             </div>
